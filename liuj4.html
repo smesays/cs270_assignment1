@@ -1,0 +1,50 @@
+<script>/*
+G Liu
+CS 270
+Assignment 1
+*/</script>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>G's Assignment 1</title>
+    <style>
+      nav {display: block; text-align: center;}
+      nav ul {margin: 0; padding: 0; list-style: none;}
+      .nav a {display: block; background: #111; color: #fff; text-decoration: none; padding: 0.8em 1.8em; position: relative;}
+      .nav {vertical-align: top; display: inline-block;}
+      .nav li {position: relative;}
+      .nav > li {float: left; margin-left: 1px; margin-right: 1px;}
+      .nav > li:hover, .nav li li a {margin-top: 1px;}
+      .nav li a:first-child:nth-last-child(2):before {content: ""; position: absolute; height: 0; width: 0; border: 5px solid transparent; top: 50%; right:5px;}
+      .nav ul {position: absolute; white-space: nowrap; z-index: 1; left: -99999em;}
+      .nav > li:hover > ul {left: auto; margin-top: 5px; min-width: 100%;}
+      .nav > li li:hover > ul {left: 100%; margin-left: 1px; top: -1px;}
+      .nav > li > a:first-child:nth-last-child(2):before {border-top-color: #aaa;}
+      .nav > li:hover > a:first-child:nth-last-child(2):before {border: 5px solid transparent; border-bottom-color: orange;}
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1 style="text-align: center;">My Drop-down Menu</h1>
+      <ul class="nav">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">About</a>
+	  <ul id="nav_about">
+	    <li><a href="#">Staff</a></li>
+	    <li><a href="#">History</a></li>
+	    <li><a href="#">Press</a></li>
+	  </ul>
+	</li>
+	<li><a href="#">Media</a>
+	  <ul id="nav_media">
+	    <li><a href="#">Audio</a></li>
+	    <li><a href="#">Video</a></li>
+	  </ul>
+	</li>
+	<li><a href="#">Blog</a></li>
+	<li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
